@@ -24,6 +24,6 @@ runs:
     - name: Create script
       shell: bash
       run: |
-        echo 'mono /usr/local/docfx.exe $@' | sudo tee /usr/local/bin/docfx
+        echo 'mono /usr/local/docfx/docfx.exe $@' | sudo tee /usr/local/bin/docfx
         sudo chmod ugo+x /usr/local/bin/docfx
         
