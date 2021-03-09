@@ -3,6 +3,7 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
+    container: unityci/editor:ubuntu-2020.1.17f1-base-0.10.0
     name: Test
     steps:
     - uses: actions/checkout@v2
